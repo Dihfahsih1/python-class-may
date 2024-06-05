@@ -12,7 +12,7 @@ def registration(name=None,age=None,course=None):
         course=input("Enter the course: ")
     user_info={"name":name, "age":age, "course":course}
     
-    return 
+    return user_info
 
 def profile(data):
     return f"NAME: {data['name']},\nAGE: {data['age']},\nCOURSE: {data['course']}"
