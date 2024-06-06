@@ -6,4 +6,4 @@ def replace_func(x, y, w):
 string =input("Enter The string")
 old=input("Enter the word to be replaced")
 new=input("Enter the word to replace with")
-print(replace_func(string, old,new))
+print(replace_func("Python Sucks", "Sucks","Enjoyable"))
