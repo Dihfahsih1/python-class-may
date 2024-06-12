@@ -21,4 +21,3 @@ class Dog(Animal):
 #creating an instance of a Dog
 dog=Dog("Buddy", "Canine", "Germany Shepherd")
 print(dog.details()) # call to a method from a derived class
-        
