@@ -1,9 +1,12 @@
-def main(name):
-    print(f"Hello, {name}")
+def hello():
+    print("Hello, world")
 
-def main2():
-    first_name=input("Enter your name")
-    main(first_name)
-        
+def add(x,y):
+    return x+y 
+
+def sub(x,y):
+    return x-y 
+
 if __name__ == "__main__":
-    main2()
+    print(add(3,4))
+    print(sub(3,4))

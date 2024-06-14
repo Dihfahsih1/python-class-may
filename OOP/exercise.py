@@ -24,4 +24,4 @@ rectangle=Rectangle(color,height, width)
 print(f"The color of the Shape is: {rectangle.color} ")
 print(f"The area of the rectangle is: {rectangle.area()}")
 print(f"The Perimeter of the rectangle is: {rectangle.perimeter()}")
-    
+
