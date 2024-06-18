@@ -1,20 +1,25 @@
 import requests
 
-url="https://jsonplaceholder.typicode.com/posts"
+url = "https://dihfahsih.com/api/review-secure-post/"
 
+data = {
+    "first_name": "Merry",
+    "last_name": "James",
+    "relationship": "Test2",
+    "compliment": "cool api call"
+}
 
-data={
-    "userId": 10,
-    "id": 100000,
-    "title":"Tests",
-    "body": "Testing ways they do not know he very pleasure is therefore called an error in\the sailor who is less great and distinguished him\let us accuse him by reason of error or"
-  }
-
-response=requests.post(url, json=data)
-
+token="a847aa77929479dcf4ac15a3f5c71b28ea646771"
+# Headers including the authentication token
+headers = {
+    'Authorization': f'Token {token}',
+    'Content-Type': 'application/json'
+}
+response = requests.post(url, json=data, headers=headers)
 if response.status_code == 201:
     new_post = response.json()
-    print("New Post created: ",new_post)
-    
+    print("New Post created: ", new_post)
 else:
     print("Failed to create a post")
+    print("Status code:", response.status_code)
+    print("Response:", response.text)
