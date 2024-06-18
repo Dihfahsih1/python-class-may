@@ -17,7 +17,7 @@ json_read_data=read_json_file(filename) # function call assigned to a variable j
 
 new_person={
     "id":00000,
-    'name':"JJohn",
+    'name':"John",
     "city":"Kampala",
     "age": 10,
 }
